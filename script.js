@@ -3,36 +3,9 @@ function getInputValue(id) {
     const inputValue = parseFloat(input.value);
     return inputValue;
 }
-function getInnerText(id) {
-    const text = document.getElementById(id);
-    const innerText = text.innerText;
-    return innerText;
-}
+
 
 document.getElementById('calculate-btn').addEventListener('click', function () {
-    //     const foodInput = document.getElementById('food-input');
-    //     const rentInput = document.getElementById('rent-input');
-    //     const clothesInput = document.getElementById('clothes-input');
-    //     const totalExpenses = document.getElementById('total-expenses');
-    //     const income = document.getElementById('income-input');
-    //     const incomeValue = parseFloat(income.value);
-    //     const balance = document.getElementById('balance');
-    //     const totalExpensesAmount = parseFloat(foodInput.value) + parseFloat(rentInput.value) + parseFloat(clothesInput.value);
-    //     const balanceAmount = parseFloat(income.value) - totalExpensesAmount;
-    //     if (isNaN(foodInput.value) || isNaN(rentInput.value) || isNaN(clothesInput.value) || isNaN(incomeValue)) {
-    //         alert('please insert a number');
-    //     }
-    //     else if (foodInput.value < 0 || rentInput.value < 0 || clothesInput.value < 0 || incomeValue < 0) {
-    //         alert('input a valid amount');
-    //     }
-    //     else if (incomeValue < totalExpensesAmount) {
-    //         alert('your income is low than the amount you want to expend');
-    //     }
-    //     else {
-    //         totalExpenses.innerText = totalExpensesAmount;
-    //         balance.innerText = balanceAmount;
-    //     }
-
     const foodInputValue = getInputValue('food');
     const rentInputValue = getInputValue('rent');
     const clothesInputValue = getInputValue('clothes');
@@ -73,10 +46,10 @@ document.getElementById('save-btn').addEventListener('click', function () {
         alert('Your balance is less than the percentage you want to save from your income');
     }
     else if (incomeInputValue < 0) {
-        alert('Your income is not a valid amount,please input a valid amount in income-input-field');
+        alert('Your income is not a valid amount, please input a valid amount in income-input-field');
     }
     else if (isNaN(incomeInputValue)) {
-        alert('Your income is not a not a number,please input number in income-input-field');
+        alert('Your income is not a not a number, please input number in income-input-field');
     }
     else {
         saving.innerText = savingAmount;
