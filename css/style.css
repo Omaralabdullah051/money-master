@@ -4,6 +4,17 @@
    padding-bottom: 90px;
    padding-left: 110px;
 }
+
+/* footer section  */
+.footer-section{
+   height: 100px;
+   margin-top: 200px;
+   padding-top: 40px;
+   text-align: center;
+   color: white;
+   background-color: black;
+}
+
 /* mobile devices style  */
 @media only screen and (max-width:500px) {
    .calculation-sector{
