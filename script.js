@@ -55,3 +55,31 @@ document.getElementById('calculate-btn').addEventListener('click', function () {
         balance.innerText = incomeInputValue - totalExpenses;
     }
 })
+
+document.getElementById('save-btn').addEventListener('click', function () {
+    const saveInputValue = getInputValue('save');
+    const saving = document.getElementById('saving-amount');
+    const incomeInputValue = getInputValue('income');
+    const savingAmount = incomeInputValue * saveInputValue / 100;
+    const balance = document.getElementById('balance');
+    const remainingBalance = document.getElementById('remaining-balance');
+    if (isNaN(saveInputValue)) {
+        alert('please input number');
+    }
+    else if (saveInputValue < 0) {
+        alert('please input a valid percentage');
+    }
+    else if (savingAmount > balance.innerText) {
+        alert('Your balance is less than the percentage you want to save from your income');
+    }
+    else if (incomeInputValue < 0) {
+        alert('Your income is not a valid amount,please input a valid amount in income-input-field');
+    }
+    else if (isNaN(incomeInputValue)) {
+        alert('Your income is not a not a number,please input number in income-input-field');
+    }
+    else {
+        saving.innerText = savingAmount;
+        remainingBalance.innerText = parseFloat(balance.innerText) - savingAmount;
+    }
+})
