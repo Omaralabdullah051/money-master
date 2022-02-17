@@ -21,31 +21,87 @@
     <main>
         <!-- section style  -->
         <section class="container mt-5">
-            <div class="row g-4">
-                <div class="col-lg-6">
+            <div class="row gx-4 ">
+                <div class="col-sm-12 col-lg-6 mb-3">
                     <img class="img-fluid" src="images/money.jpg" alt="">
                     <img class="img-fluid" src="images/money-2.jpg" alt="">
                 </div>
-                <div class="col-lg-6 calculation-sector">
-                    <h2 class="text-center fs-3 fw-bolder">Income</h2>
-                    <p class="text-center fw-bold fs-4">Income: <input id="income-input" type="text"></p>
-                    <h3 class="text-center fs-3 fw-bolder">Expenses</h3>
-                    <p class="text-center fw-bold fs-4">Food: <input id="food-input" class="ms-3" type="text"></p>
-                    <p class="text-center fw-bold fs-4">Rent: <input id="rent-input" class="ms-4" type="text"></p>
-                    <p class="text-center fw-bold fs-4">clothes: <input id="clothes-input" type="text"></p>
-                    <p class="text-center"> <button id="calculate-btn" class="btn btn-lg btn-primary center">Calculate
-                        </button></p>
-                    <h4 class="text-center fs-3 fw-bold">Total Expenses:$<span id="total-expenses">00</span></h4>
-                    <h4 class="text-center fs-3 fw-bold">Balance:$<span id="balance">00</span></h4>
-                    <p class="text-center fw-bold fs-4">save: <input id="save-input" class="w-25" type="text"> %
-                        <button id="save-btn" class="btn btn-md btn-primary">Save</button>
-                    </p>
-                    <h4 class="text-center fs-4 fw-bold">Saving Amount:$<span id="saving-amount">00</span></h4>
-                    <h4 class="text-center fs-4  fw-bold">Remaining Balance:$<span id="remaining-balance">00</span>
-                    </h4>
+                <div class="col-lg-6 calculation-sector bg-secondary mb-3 ">
+                    <div class="mb-3 row">
+                        <div class="col-sm-10">
+                            <h3 class="text-center ">Income</h3>
+                        </div>
+                    </div>
+                    <div class="mb-3 row ">
+                        <label for="income" class="col-sm-2 col-form-label fw-bold ">Income :</label>
+                        <div class="col-sm-7">
+                            <input type="text" class="form-control border border-dark fw-bold" id="income-input">
+                        </div>
+                    </div>
+                    <div class="mb-3 row">
+                        <div class="col-sm-10">
+                            <h3 class="text-center ">Expenses</h3>
+                        </div>
+                    </div>
+                    <div class="mb-3 row">
+                        <label for="food-input" class="col-sm-2 col-form-label fw-bold">Food :</label>
+                        <div class="col-sm-7">
+                            <input type="text" class="form-control
+                            border border-dark fw-bold" id="food-input">
+                        </div>
+                    </div>
+                    <div class="mb-3 row">
+                        <label for="rent-input" class="col-sm-2 col-form-label fw-bold">Rent :</label>
+                        <div class="col-sm-7">
+                            <input type="text" class="form-control border border-dark fw-bold" id="rent-input">
+                        </div>
+                    </div>
+                    <div class="mb-3 row">
+                        <label for="clothes-input" class="col-sm-2 col-form-label fw-bold">clothes :</label>
+                        <div class="col-sm-7">
+                            <input type="text" class="form-control border border-dark fw-bold" id="clothes-input">
+                        </div>
+                    </div>
+                    <div class="mb-3 row">
+                        <div class="col-sm-10">
+                            <p class="text-center">
+                                <button class="btn btn-lg btn-primary" id="calculate-btn">Calculate</button>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="mb-3 row">
+                        <div class="col-sm-10">
+                            <h3 class="text-center ">Total Expenses : $<span id="total-expenses">00</span></h3>
+                        </div>
+                    </div>
+                    <div class="mb-3 row">
+                        <div class="col-sm-10">
+                            <h3 class="text-center ">Balance : $<span id="balance">00</span></h3>
+                        </div>
+                    </div>
+                    <div class="mb-3 row">
+                        <div class="col-sm-10">
+                            <p class="text-center fw-bold fs-4">save: <input id="save-input" class="w-25" type="text"> %
+                                <button id="save-btn" class="btn btn-md btn-primary">Save</button>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="mb-3 row">
+                        <div class="col-sm-10">
+                            <h3 class="text-center ">Saving Amount : $<span id="saving-amount">00</span></h3>
+                        </div>
+                    </div>
+                    <div class="mb-3 row">
+                        <div class="col-sm-10">
+                            <h3 class="text-center ">Remaining Balance : $<span id="remaining-balance">00</span>
+                            </h3>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
+
+        </div>
     </main>
     <!-- js file  -->
     <script src="script.js"></script>
