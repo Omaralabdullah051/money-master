@@ -1,5 +1,20 @@
 .calculation-sector{
-   padding-top: 90px;
+   padding-top: 120px;
    padding-bottom: 90px;
    padding-left: 110px;
+}
+@media only screen and (max-width:500px) {
+   .calculation-sector{
+      padding-top: 20px;
+      padding-bottom: 20px;
+      padding-left: 10px;
+   }
+}
+
+@media only screen and (min-width:820px) and (max-width:1400px) {
+   .calculation-sector{
+      padding-top:0px;
+      padding-bottom: 0px;
+      padding-left: 60px;
+   }
 }
